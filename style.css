@@ -1,0 +1,544 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --dft-color: #0b0736;
+}
+
+/* Navbar Css Start */
+
+.navbar {
+  margin: 0 47px;
+  padding: 20px 40px;
+  display: flex;
+  gap: 3.8rem;
+
+  & h1 {
+    font-size: 24px;
+    color: var(--dft-color);
+  }
+
+  .app-link {
+    display: flex;
+    padding: 8px;
+    gap: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgb(215, 214, 214);
+    color: var(--dft-color);
+
+    .menu-image {
+      width: 21px;
+      height: 21px;
+    }
+
+    & p {
+      font-weight: bold;
+    }
+  }
+}
+
+/* Navbar Css End */
+
+/* Hero Css Start*/
+
+.hero {
+  margin-left: 150px;
+  padding: 120px 0;
+
+  .hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50dvw;
+    z-index: -155;
+  }
+
+  .hero-texts {
+    color: var(--dft-color);
+
+    & h1 {
+      font-size: 90px;
+    }
+
+    & p {
+      font-size: 26px;
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      padding: 20px 0;
+    }
+  }
+
+  button {
+    color: white;
+    font-size: 18px;
+    padding: 20px 30px;
+    background-color: var(--dft-color);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+/* Hero Css End*/
+
+/* Same Css Start*/
+
+.same {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 55px;
+  padding: 140px 0;
+  gap: 5rem;
+  place-items: center;
+
+  .same-image {
+    .same-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .same-texts {
+    padding: 40px 0;
+
+    & h1 {
+      font-size: 68px;
+      color: black;
+    }
+
+    & p {
+      font-size: 24px;
+      color: gray;
+      padding: 40px 0;
+    }
+
+    .app-store-link {
+      width: fit-content;
+      width: -moz-fit-content;
+      height: fit-content;
+      padding: 16px 28px;
+      background-color: #cce8fd;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      border-radius: 25px;
+
+      .apple-image {
+        width: 25px;
+        height: 30px;
+      }
+
+      .texts {
+        & p {
+          color: #9393c4;
+          font-size: 12px;
+          padding: 0;
+        }
+
+        & h3 {
+          font-size: 18px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+/* Same Css End*/
+
+/* Track Css Start*/
+
+.track {
+  position: relative;
+
+  .bg-image {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    z-index: -1;
+  }
+
+  .main-container {
+    margin: 0 55px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5rem;
+
+    .left-sec {
+      & h1 {
+        font-size: 85px;
+        color: black;
+      }
+
+      .image-grid {
+        padding: 80px 0 0 80px;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        & div {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .marged-grid {
+          margin-top: 40px;
+        }
+      }
+    }
+
+    .right-sec {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      justify-content: center;
+
+      & h1 {
+        font-size: 40px;
+        color: #9393c4;
+        padding-right: 128px;
+        font-weight: normal;
+      }
+
+      .details {
+        display: flex;
+        gap: 2rem;
+
+        & img {
+          width: 86px;
+          height: 86px;
+        }
+
+        & div {
+          & h2 {
+            color: black;
+            font-size: 24px;
+          }
+
+          & p {
+            color: #9393c4;
+            font-size: 20px;
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Track Css End*/
+
+/* Company Css Start*/
+
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% auto;
+    max-width: 1240px;
+    /* padding: 0 50px; */
+
+  .companies-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Company Css End*/
+
+/* Trial Css Start*/
+
+.trial {
+  margin: 120px 68px;
+  background-color: #d9f4ff;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  place-items: center;
+  border-radius: 60px;
+
+  .text-app {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & h1 {
+      color: black;
+      font-size: 68px;
+    }
+
+    .app-store-link {
+      width: fit-content;
+      width: -moz-fit-content;
+      height: fit-content;
+      padding: 16px 28px;
+      background-color: var(--dft-color);
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      border-radius: 25px;
+
+      .apple-image {
+        width: 25px;
+        height: 30px;
+      }
+
+      .texts {
+        & p {
+          color: #9393c4;
+          font-size: 12px;
+          padding: 0;
+        }
+
+        & h3 {
+          font-size: 18px;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .trial-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Trial Css End*/
+
+/* Copyright Css Start*/
+
+.copyright {
+  margin-bottom: 20px;
+
+  & p {
+    color: #9393c4;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* Copyright Css End*/
+
+/* Media Query Start */
+
+@media only screen and (max-width: 1230px) {
+  .trial {
+    grid-template-columns: repeat(auto-fit, minmax(0, 100%));
+
+    .text-app {
+      padding-top: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+    .hero {
+      
+        .hero-texts {
+      
+          & h1 {
+            font-size: 50px;
+          }
+      
+          & p {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .same{
+        grid-template-columns: repeat(auto-fit,minmax(0,100%));
+
+        .same-texts {
+            & h1 {
+              font-size: 45px;
+            }
+        
+            & p {
+              font-size: 15px;
+            }
+        
+            .app-store-link {
+              padding: 10px 20px;
+        
+        
+              .texts {
+                & p {
+                  font-size: 10px;
+                }
+        
+                & h3 {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+      }
+
+      .track {
+        .bg-image{
+            width: 100%;
+            left: 0%;
+            top: 0%;
+        }
+
+      
+        .main-container {
+            grid-template-columns: repeat(auto-fit,minmax(0,100%));
+      
+          .left-sec {
+            & h1 {
+              font-size: 50px;
+            }
+          }
+      
+          .right-sec {
+      
+            & h1 {
+              font-size: 30px;
+            }
+      
+            .details {
+      
+              & div {
+                & h2 {
+                  font-size: 20px;
+                }
+      
+                & p {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .trial{
+        .text-app{
+            & h1{
+                font-size: 50px;
+            }
+        }
+      }
+  }
+
+  @media  only screen and (max-width: 782px) {
+    .hero{
+        margin-left: 80px;
+
+        .hero-texts{
+            & h1{
+                font-size: 40px;
+            }
+        }
+    }
+  }
+
+  @media  only screen and (max-width: 680px) {
+    .track {
+      .main-container {
+        .left-sec {
+          & h1 {
+            font-size: 30px;
+          }
+
+          .image-grid {
+            & div{
+              & img{
+                border: 1px solid gainsboro;
+                border-radius: 25px;
+              }
+            }
+
+            & :last-child{
+              margin: 0;
+            }
+          }
+        }
+  }}}
+
+  @media only screen and (max-width: 650px) {
+    .navbar{
+      & .app-link{
+        display: none;
+      }
+    }
+  }
+
+  @media  only screen and (max-width: 450px) {
+    .track {
+      .main-container {
+        .left-sec {
+          & h1 {
+            font-size: 30px;
+          }
+
+          .image-grid {
+            justify-content: center;
+            padding: 40px 0;
+          }
+        }
+  }
+}
+
+.trial{
+  .text-app{
+      & h1{
+          font-size: 25px;
+      }
+
+      .app-store-link{
+        padding: 10px 20px;
+      }
+  }
+}
+}
+  
+
+@media  only screen and (max-width: 340px) {
+   .navbar{
+    margin: 0;
+
+    & h1{
+      font-size: 20px;
+    }
+   }
+
+   .hero{
+    margin-left: 35px;
+
+     .hero-texts{
+      & h1{
+        font-size: 25px;
+      }
+     }
+   }
+
+   .trial{
+    .text-app{
+        & h1{
+            font-size: 18px;
+        }
+  
+        .app-store-link{
+          padding: 5px 10px;
+        }
+    }
+  }
+}
+
+/* Media Query End */
